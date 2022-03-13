@@ -1,1 +1,2 @@
-cc -S $CFILE
+#!/bin/bash
+cc -S $CFILE.c
