@@ -3,30 +3,22 @@
 /**
  * main - print the letters of the alphabet
  *
- * Description: print the letters of the alphabet in lower then in uppercase
+ * Description: print the letters of the alphabet except e, q
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-{
-	int i, j;
-
-	i = 97;
-	j = 65;
+{ int i = 97;
 
 	while (i < 123)
 	{
-		putchar(i);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
 		i++;
 	}
-
-	while (j < 91)
-	{
-		putchar(j);
-		j++;
-	}
-
 	putchar(10);
 
 	return (0);
