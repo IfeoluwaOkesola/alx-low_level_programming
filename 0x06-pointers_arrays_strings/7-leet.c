@@ -7,16 +7,17 @@
 char *leet(char *s)
 {
 	int i, j;
-	char leet1[] = {'A', 'E', '0', 'T', 'L'};
-	char leet2[] = {'4', '3', '0', '7', '1'};
+
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == leet1[j] || s[i] == leet1[j] + ('a' - 'A'))
+			if (s[i] == a[j])
 			{
-				s[i] = leet2[j];
+				s[i] = b[j];
 			}
 		}
 	}
